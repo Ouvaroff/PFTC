@@ -2,18 +2,18 @@ import pandas as pd
 import math as mt
 from prettytable import PrettyTable
 
-x1 = PrettyTable()
+x11 = PrettyTable()
 
-x1.field_names = ["Programm for toxicological calculation (PFTC)"]
-x1.add_row(["Start calculation"])
-x1.add_row(["Working area air"])
+x11.field_names = ["Programm for toxicological calculation (PFTC)"]
+x11.add_row(["Start calculation"])
+x11.add_row(["Working area air"])
 
-x1.align["Programm for toxicological calculation (PFTC)"] = "e"
-x1.border = True
-x1.header = True
-x1.padding_width = 1
+x11.align["Programm for toxicological calculation (PFTC)"] = "e"
+x11.border = True
+x11.header = True
+x11.padding_width = 1
 
-print(x1)
+print(x11)
 
 filename = f'result_of_calculation.txt'
 
@@ -21,8 +21,6 @@ filename = f'result_of_calculation.txt'
 #Working area air
 
     #Methods of correlation analysis
-
-table_1 = pd.DataFrame()
 
 # Создание таблицы с данными
 x1 = PrettyTable()
@@ -118,7 +116,6 @@ elif cl50 == 16:
 
 with open(filename, 'a') as file:
     file.write(f"Итоговый ВДКрз по методу CL50:{(eq_1)}\n")
-table_2 = pd.DataFrame()
 
 # Создание таблицы с данными
 x2 = PrettyTable()
@@ -163,8 +160,6 @@ elif dl50 == 4 or dl50 == 5 or dl50 == 6:
 with open(filename, 'a') as file:
     file.write(f"Итоговый ВДКрз по методу DL50ж:{(eq_2)}\n")
     #By the biological activity of chemical bonds
-
-table_3 = pd.DataFrame()
 
 # Создание таблицы с данными
 x = PrettyTable()
@@ -381,17 +376,17 @@ print("Итоговый ВДКрз по методу хим. связей:", tot
 with open(filename, 'a') as file:
     file.write(f"Итоговый ВДКрз по методу хим. связей:{(total_vdk_rz)}\n")
 
-x2 = PrettyTable()
+x22 = PrettyTable()
 
-x2.field_names = ["Programm for toxicological calculation (PFTC)"]
-x2.add_row(["Atmospheric air of populated areas"])
+x22.field_names = ["Programm for toxicological calculation (PFTC)"]
+x22.add_row(["Atmospheric air of populated areas"])
 
-x2.align["Programm for toxicological calculation (PFTC)"] = "e"
-x2.border = True
-x2.header = True
-x2.padding_width = 1
+x22.align["Programm for toxicological calculation (PFTC)"] = "e"
+x22.border = True
+x22.header = True
+x22.padding_width = 1
 
-print(x2)
+print(x22)
 
 #Atmospheric air of populated areas
 
@@ -409,17 +404,17 @@ with open(filename, 'a') as file:
 with open(filename, 'a') as file:
     file.write(f"Итоговый ВДКав по методу CL50:{(vdk_av_res_v2)}\n")
 
-x3 = PrettyTable()
+x33 = PrettyTable()
 
-x3.field_names = ["Programm for toxicological calculation (PFTC)"]
-x3.add_row(["Water bodies"])
+x33.field_names = ["Programm for toxicological calculation (PFTC)"]
+x33.add_row(["Water bodies"])
 
-x3.align["Programm for toxicological calculation (PFTC)"] = "e"
-x3.border = True
-x3.header = True
-x3.padding_width = 1
+x33.align["Programm for toxicological calculation (PFTC)"] = "e"
+x33.border = True
+x33.header = True
+x33.padding_width = 1
 
-print(x3)
+print(x33)
 
 #Water bodies
 
@@ -443,17 +438,17 @@ with open(filename, 'a') as file:
 with open(filename, 'a') as file:
     file.write(f"Итоговый ВДКхп по третьей формуле:{(vdk_hp_res_v3)}\n")
 
-x4 = PrettyTable()
+x44 = PrettyTable()
 
-x4.field_names = ["Programm for toxicological calculation (PFTC)"]
-x4.add_row(["Food products"])
+x44.field_names = ["Programm for toxicological calculation (PFTC)"]
+x44.add_row(["Food products"])
 
-x4.align["Programm for toxicological calculation (PFTC)"] = "e"
-x4.border = True
-x4.header = True
-x4.padding_width = 1
+x44.align["Programm for toxicological calculation (PFTC)"] = "e"
+x44.border = True
+x44.header = True
+x44.padding_width = 1
 
-print(x4)
+print(x44)
 
 #Food products
 
@@ -497,14 +492,14 @@ print("Итоговый ВДКпр почвы по общей формуле:",v
 with open(filename, 'a') as file:
     file.write(f"Итоговый ВДКпр почвы по общей формуле:{(vdk_pr_total_v1)}\n")
 
-x5 = PrettyTable()
+x55 = PrettyTable()
 
-x5.field_names = ["Programm for toxicological calculation (PFTC)"]
-x5.add_row(["End of calculation"])
+x55.field_names = ["Programm for toxicological calculation (PFTC)"]
+x55.add_row(["End of calculation"])
 
-x5.align["Programm for toxicological calculation (PFTC)"] = "e"
-x5.border = True
-x5.header = True
-x5.padding_width = 1
+x55.align["Programm for toxicological calculation (PFTC)"] = "e"
+x55.border = True
+x55.header = True
+x55.padding_width = 1
 
-print(x5)
+print(x55)
